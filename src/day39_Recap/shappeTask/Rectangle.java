@@ -48,10 +48,10 @@ public class Rectangle extends Shape{
     @Override
     public String toString() {
         return "Rectangle{" +
-                "length=" + length +
-                ", width=" + width +
-                ", area =" + area() +
-                ", perimeter" + perimeter() +
+                "length= " + length +
+                ", width= " + width +
+                ", area = " + area() +
+                ", perimeter= " + perimeter() +
                 '}';
     }
 }
