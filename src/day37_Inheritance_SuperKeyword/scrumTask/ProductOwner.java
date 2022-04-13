@@ -1,4 +1,4 @@
-package day37_Inheritance_SuperKeyword.EmployeeTask;
+package day37_Inheritance_SuperKeyword.scrumTask;
 
 public class ProductOwner extends Employee{
     public ProductOwner(String name, int age, char gender, int id, double salary, String companyName) {

@@ -1,4 +1,4 @@
-package day37_Inheritance_SuperKeyword.EmployeeTask;
+package day37_Inheritance_SuperKeyword.scrumTask;
 
 public class Tester extends Employee  {
     public Tester(String name, int age, char gender, String jobTitle, int id, double salary, String companyName){
