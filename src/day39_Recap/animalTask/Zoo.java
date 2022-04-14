@@ -11,9 +11,12 @@ public class Zoo {
         System.out.println(tiger);
         Cat cat= new Cat("Catty", "Kitty",'M',4,"small","white",
                 false,true,true);
+        tiger.setName("");
         cat.meow();
         cat.setName("Smoke");
         System.out.println(cat);
+
+
 
 
 
