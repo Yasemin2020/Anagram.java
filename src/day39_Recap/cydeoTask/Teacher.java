@@ -1,4 +1,4 @@
-package day39_Recap.CydeoTask;
+package day39_Recap.cydeoTask;
 
 public class Teacher extends Employee {
 

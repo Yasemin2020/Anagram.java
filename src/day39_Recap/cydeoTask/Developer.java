@@ -1,4 +1,4 @@
-package day39_Recap.CydeoTask;
+package day39_Recap.cydeoTask;
 
 public class Developer extends Employee {
     public Developer(String name, int age, char gender, int employeeId, String jobTitle, double salary) {
