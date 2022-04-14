@@ -1,4 +1,4 @@
-package day34_GarbageCollection_AccessModifiers;
+package day35_Encapsulation.day34_GarbageCollection_AccessModifiers;
 
 import day30_CutomClass.Dog;
 import day31_Constructors.Student;
