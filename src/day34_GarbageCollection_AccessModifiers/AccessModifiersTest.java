@@ -1,4 +1,4 @@
-package day35_Encapsulation.day34_GarbageCollection_AccessModifiers;
+package day34_GarbageCollection_AccessModifiers;
 
 public class AccessModifiersTest {
 

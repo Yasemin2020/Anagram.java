@@ -1,4 +1,4 @@
-package day32_Contructors.DAY33_Statics;
+package DAY33_Statics;
 
 public class EmployeeObjects {
     public static void main(String[] args) {

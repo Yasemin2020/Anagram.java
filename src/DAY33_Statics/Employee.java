@@ -1,4 +1,4 @@
-package day32_Contructors.DAY33_Statics;
+package DAY33_Statics;
 
 public class Employee {
     public static String name;
