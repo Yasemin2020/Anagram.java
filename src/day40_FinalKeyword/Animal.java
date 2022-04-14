@@ -8,6 +8,8 @@ public class Animal {
     private String size;
     private int age;
 
+    //----------------------Getters----------------------------
+
     public Animal(String name, String breed, char gender, String color, String size, int age) {
         this.name = name;
         this.breed = breed;
@@ -19,10 +21,6 @@ public class Animal {
 
     public String getName() {
         return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public String getBreed() {
@@ -41,15 +39,31 @@ public class Animal {
         return size;
     }
 
-    public void setSize(String size) {
-        this.size = size;
-    }
-
     public int getAge() {
         return age;
+    }
+
+// -----------------Setters-------------------------------------
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setSize(String size) {
+        this.size = size;
     }
 
     public void setAge(int age) {
         this.age = age;
     }
+
+
+    public void eat(){
+        System.out.println(name+ " is eating ");
+    }
+    public final void drink(){
+        System.out.println(name+" is drinking");
+    }
+
+
+
 }
