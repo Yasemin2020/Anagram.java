@@ -8,6 +8,7 @@ public class IphoneTest {
         iphone1.faceTime("cydeo@email.com");
         iphone1.call(532859654);
         iphone1.text(532859654);
+        iphone1.printOperatingSystem();
 
     }
 }
