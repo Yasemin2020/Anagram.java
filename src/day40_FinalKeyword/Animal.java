@@ -20,6 +20,7 @@ public class Animal {
     }
 
     public String getName() {
+
         return name;
     }
 
@@ -45,6 +46,10 @@ public class Animal {
 
 // -----------------Setters-------------------------------------
     public void setName(String name) {
+        if(name.isBlank()){
+            System.out.println("Invalid name set");
+            System.exit(1);
+        }
         this.name = name;
     }
 
