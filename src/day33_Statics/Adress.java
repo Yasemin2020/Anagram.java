@@ -1,4 +1,4 @@
-package DAY33_Statics;
+package day33_Statics;
 
 public class Adress {
     public int buildingNumber;

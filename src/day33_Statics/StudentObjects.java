@@ -1,4 +1,4 @@
-package DAY33_Statics;
+package day33_Statics;
 
 import java.util.Arrays;
 public class StudentObjects {
