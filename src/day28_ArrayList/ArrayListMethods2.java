@@ -18,17 +18,18 @@ public class ArrayListMethods2 {
        // int num=1;
        // list.remove(num);
 
+
+
         Integer num=200;
        // list.remove(200);
         boolean r=list.remove(num);//-200
-        list.remove((num));//-200
+        list.remove(num);//-200 not to take the int as index, change primitive int to Integer
         System.out.println(list);
-        System.out.println(r);
+        System.out.println("r = " + r);
 
         Integer num2=2000;
         boolean r2=list.remove(num2);
-        System.out.println(r2);
-
+        System.out.println("r2 = " + r2);
         System.out.println("-----------------------------");
 
         System.out.println(list.size());
@@ -74,7 +75,7 @@ public class ArrayListMethods2 {
         list2.add(100);
         list2.add(100);
 
-        System.out.println(list1==list2);//false because they are saves different elements in heep
+        System.out.println(list1==list2);//false because they save different elements in heep
         System.out.println(list1.equals(list2));// if they are same elements in same order true otherwise returns false
 
         System.out.println("----------------------------------");
@@ -90,7 +91,6 @@ public class ArrayListMethods2 {
         //Bulk Operation: needs Coolection Type
         numbers.addAll(Arrays.asList(1,2,3,4,5,6,7,8));
         System.out.println(numbers);
-
 
 
 
