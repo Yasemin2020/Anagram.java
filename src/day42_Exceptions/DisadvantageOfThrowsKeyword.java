@@ -7,7 +7,7 @@ public class DisadvantageOfThrowsKeyword {
         System.out.println("Hello World");
         System.out.println("-----------------------------------");
         System.out.println("Hello");
-        MorningWorkOut2.sleep(2.5); // try & catch
+        SleepMethod.sleep(2.5); // try & catch
         System.out.println("Hello World");
         System.out.println("-----------------------------------");
 
