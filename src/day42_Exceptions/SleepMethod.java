@@ -1,6 +1,6 @@
 package day42_Exceptions;
 
-public class MorningWorkOut2 {
+public class SleepMethod {
     public static void main(String[] args) {
         System.out.println(" -----------------------Push up started-----------------");
 
