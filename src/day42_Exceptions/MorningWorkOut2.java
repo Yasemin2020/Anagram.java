@@ -6,7 +6,7 @@ public class MorningWorkOut2 {
 
         for (int i = 0; i <=30; i++) {
             System.out.print("\rPush up "+ i);
-            sleep(2.5);
+            sleep(1.5);
 
         }
         System.out.println("\n-----------------------Push up completed-----------------");

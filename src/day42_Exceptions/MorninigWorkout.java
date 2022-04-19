@@ -8,7 +8,7 @@ public class MorninigWorkout {
             System.out.print("\rPush up "+ i);
 
             try{
-                Thread.sleep(100);
+                Thread.sleep(1500);
             }catch (InterruptedException e){
                 e.printStackTrace();
             }
