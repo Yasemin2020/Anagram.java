@@ -9,5 +9,8 @@ public class Dog extends Animal {
     public void eat() {
         System.out.println(getName()+" eats pizza");
     }
+    public void bark(){
+        System.out.println(getName()+" is barking");
+    }
 
 }
