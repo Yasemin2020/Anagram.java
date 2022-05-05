@@ -1,4 +1,4 @@
-package day44_Abstraction.AnimalTask;
+package day34_GarbageCollection_AccessModifiers.day44_Abstraction.AnimalTask;
 
 public abstract class Animal {
     private String name;

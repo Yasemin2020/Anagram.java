@@ -1,4 +1,4 @@
-package day44_Abstraction.AnimalTask;
+package day34_GarbageCollection_AccessModifiers.day44_Abstraction.AnimalTask;
 
 public final class Parrot extends Animal implements Playable, Flyable{
     public Parrot(String name, String breed, char gender, int age, String size, String color) {
