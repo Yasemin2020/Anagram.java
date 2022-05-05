@@ -1,8 +1,13 @@
 package day45_Interface.shape;
 
-public class Circle {
+public class Circle extends Shape {
     private double radius;
     public final static double pi=3.14;
+
+    public Circle(double radius) {
+        super("Circle");
+        this.radius = radius;
+    }
 
     public double getRadius() {
         return radius;
@@ -12,6 +17,17 @@ public class Circle {
         if (radius<0){
             throw new RuntimeException("Invalid radius: "+radius);
         }
-        this.radius = radius;
+        setRadius(radius);
+    }
+
+
+    @Override
+    public double area() {
+        return radius*radius*pi;
+    }
+
+    @Override
+    public double perimeter() {
+        return 2*radius*pi;
     }
 }
