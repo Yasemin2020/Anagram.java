@@ -6,7 +6,8 @@ public class Circle extends Shape {
 
     public Circle(double radius) {
         super("Circle");
-        this.radius = radius;
+        setRadius(radius);
+
     }
 
     public double getRadius() {
@@ -17,7 +18,7 @@ public class Circle extends Shape {
         if (radius<0){
             throw new RuntimeException("Invalid radius: "+radius);
         }
-        setRadius(radius);
+        this.radius = radius;
     }
 
 
