@@ -16,6 +16,9 @@ public class Cylinder extends Shape implements Volume{
     }
 
     public void setRadius(double radius) {
+        if (radius<0){
+            throw new RuntimeException("Invalid radius: "+radius);
+        }
         this.radius = radius;
     }
 
@@ -24,6 +27,9 @@ public class Cylinder extends Shape implements Volume{
     }
 
     public void setHeight(double height) {
+        if(height<=0){
+            throw new RuntimeException("Invalid side: "+height);
+        }
         this.height = height;
     }
 
@@ -40,5 +46,14 @@ public class Cylinder extends Shape implements Volume{
     @Override
     public double volume() {
         return 0;
+    }
+
+    @Override
+    public String toString() {
+        return "Cylinder{" +
+                super.toString()+
+                ", radius=" + radius +
+                ", height=" + height +
+                '}';
     }
 }
