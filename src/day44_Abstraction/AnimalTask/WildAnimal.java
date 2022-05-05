@@ -1,4 +1,4 @@
-package day34_GarbageCollection_AccessModifiers.day44_Abstraction.AnimalTask;
+package day44_Abstraction.AnimalTask;
 
 public interface WildAnimal {
     boolean isWild=true; // static & final by default

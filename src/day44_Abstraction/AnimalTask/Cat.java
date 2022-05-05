@@ -1,4 +1,4 @@
-package day34_GarbageCollection_AccessModifiers.day44_Abstraction.AnimalTask;
+package day44_Abstraction.AnimalTask;
 
 public class Cat extends Animal implements Playable{
     public Cat(String name, String breed, char gender, int age, String size, String color) {
