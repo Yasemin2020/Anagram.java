@@ -1,13 +1,18 @@
 package day01_JavaIntro;
-import Utilities.StringUtility;
-import day34_GarbageCollection_AccessModifiers.Circle;
+
+
+
 public class Test {
     public static void main(String[] args) {
-        String str="Wooden Spoon";
-        StringUtility.printEachChar(str);
-        System.out.println(Circle.pi);
+        try{
+            System.out.println(12/0);
 
-
+        }catch(ArithmeticException e){
+            System.out.println("arithmatic");
+        }catch(RuntimeException e) {
+            System.out.println("run");
+        }
     }
+
 
 }

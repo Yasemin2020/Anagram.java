@@ -22,6 +22,7 @@ public class ArraysIntro {
 
         System.out.println(Arrays.toString(days));
 
+
         System.out.println("------------------------------");
 
         int number=2;

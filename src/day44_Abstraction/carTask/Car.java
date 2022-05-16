@@ -9,10 +9,11 @@ public abstract class Car {
     public Car(String brand, String model, String color, int year, double price) {
 
         this.brand = brand;
-        if (color==null){
-            throw new RuntimeException("color can not be null!");
-        }else if(color.isEmpty()){
-            throw new RuntimeException("color can not be empty!");
+        if (model==null){
+            throw new RuntimeException("model can not be null!");
+        }
+        if(model.isEmpty()){
+            throw new RuntimeException("model can not be empty!");
         }
         this.model = model;
         setColor(color);
@@ -31,17 +32,16 @@ public abstract class Car {
     }
 
     public String getModel() {
-        if (model==null){
-            throw new RuntimeException("model can not be null!");
-        }
-        if(model.isEmpty()){
-            throw new RuntimeException("model can not be empty!");
-        }
+
         return model;
     }
 
     public String getColor() {
-
+        if (color==null){
+            throw new RuntimeException("color can not be null!");
+        }else if(color.isEmpty()){
+            throw new RuntimeException("color can not be empty!");
+        }
         return color;
     }
 
