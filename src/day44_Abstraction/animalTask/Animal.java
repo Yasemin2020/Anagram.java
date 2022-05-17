@@ -1,4 +1,4 @@
-package day44_Abstraction.AnimalTask;
+package day44_Abstraction.animalTask;
 
 public abstract class Animal {
     private String name;

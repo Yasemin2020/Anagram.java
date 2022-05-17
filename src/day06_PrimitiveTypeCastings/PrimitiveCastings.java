@@ -5,7 +5,7 @@ public class PrimitiveCastings {
         byte a=100;
         short b=a;//short b=short a
         int c=b;//implicit casting
-                  //int c=(int)b
+        //int c=(int)b
         long d=c;
         float e=d;
         double f=e;
