@@ -60,7 +60,7 @@ public class SetPractice2 {
         System.out.println("--------------------------------------------------------");
 
         Set<String> names =new LinkedHashSet<>();
-        names.addAll(Arrays.asList("Ahmet", "Ahmet", "John", "James", "Breanna", "Shay", "Ahmet"));
+        names.addAll(Arrays.asList("Ahmet", "Ahmet", "John", "James", "Breanna", "Shay", "Ahmet",null));
 
         System.out.println((names.toArray(new String[0])[2]));
 
