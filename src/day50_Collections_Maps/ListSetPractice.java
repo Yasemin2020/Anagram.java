@@ -1,5 +1,6 @@
 package day50_Collections_Maps;
 
+import java.lang.reflect.Array;
 import java.util.*;
 
 public class ListSetPractice {
@@ -14,9 +15,28 @@ public class ListSetPractice {
         List<Integer> list = new ArrayList<>(set);
         System.out.println(list);
 
-        List<String> names =null;
+       // List<String> names =null;
 
         //System.out.println(names.size());//NullPointerException
+
+        System.out.println("----------------------------------------------");
+
+        //pop==> LIFO
+
+        List<Character> chars = new Stack<>();
+        chars.addAll(Arrays.asList('A','B','C','D'));
+
+        ((Stack)chars).pop();// deletes last element D
+
+        System.out.println("chars = " + chars);
+
+        //poll()==> FIFO
+
+        List<String> names =new LinkedList<>();
+        names.addAll(Arrays.asList("James", "Jimmy", "Kathy", "Breanna", "Max"));
+
+        ((LinkedList<String>) names).poll();
+        System.out.println("names = " + names);
 
 
 
