@@ -5,7 +5,6 @@ public enum Level {
     MEDIUM,
     HARD,
     ADVANCED,
-    EXPERT,
-    CHUCK_NORRIS
+    EXPERT
 
 }
