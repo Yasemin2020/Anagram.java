@@ -83,11 +83,6 @@ public class MapPractice2 {
         }
         System.out.println(map);
 
-
-
-
-
-
     }
 }
 /*
