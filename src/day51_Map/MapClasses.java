@@ -46,7 +46,20 @@ public class MapClasses {
         System.out.println("treeMap = " + treeMap);
 
         Map<Integer, String> hashtable= new Hashtable<>();
+        hashtable.put(10, "Arthur");
+        hashtable.put(20, "George");
+        hashtable.put(3, "Jack");
+        hashtable.put(40, "Emma");
+        hashtable.put(5, "Ahmet");
+        hashtable.put(5,"Isabella");
+       // hashtable.put(6, null);
 
+        System.out.println("hashtable = " + hashtable);
+
+
+
+        //   String str = null;
+        // System.out.println(str.toUpperCase());
 
 
     }
