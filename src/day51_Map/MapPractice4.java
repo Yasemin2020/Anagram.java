@@ -24,7 +24,7 @@ public class MapPractice4 {
 
         //pair:Id & names of students
 
-        Map<Integer, ArrayList> groups = new TreeMap<>();
+        Map<Integer, ArrayList<String>> groups = new TreeMap<>();
         groups.put(1,group1);
         groups.put(2,group2);
         groups.put(9, group9);
@@ -32,6 +32,28 @@ public class MapPractice4 {
         groups.put(5, group5);
 
         System.out.println(groups);
+
+        /*for (Object each : groups.get(9)) {
+            System.out.println(each);
+        }*/
+
+        System.out.println(groups.get(2).get(1).charAt(2));
+
+        System.out.println("------------------------------------------------------------");
+
+       /* for (Map.Entry<Integer, ArrayList<String>> entry : groups.entrySet()) {
+            for (String each : entry.getValue()) {
+                System.out.println(each);
+            }
+        }*/
+
+        for (ArrayList<String> eachGroup : groups.values()) {
+            for (String each : eachGroup) {
+                System.out.println(each);
+            }
+
+        }
+
 
 
 
