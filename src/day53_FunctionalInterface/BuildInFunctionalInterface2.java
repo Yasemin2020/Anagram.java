@@ -1,6 +1,7 @@
 package day53_FunctionalInterface;
 
 import java.util.Arrays;
+import java.util.function.BiConsumer;
 import java.util.function.BiPredicate;
 
 public class BuildInFunctionalInterface2 {
@@ -22,7 +23,7 @@ public class BuildInFunctionalInterface2 {
         System.out.println(r1);
 
         System.out.println("------------------------------------------------");
-
+// create a function that can check if two strings are anagram
         BiPredicate<String, String> anagram =(a, b)->{
             String[] arr1= a.split("");
             String[] arr2= b.split("");
@@ -30,7 +31,15 @@ public class BuildInFunctionalInterface2 {
             Arrays.sort(arr2);
             return  Arrays.equals(arr1,arr2);
         };
+        System.out.println("--------------------------------------------------");
+// create a function that can print the given string for given number of times
+        BiConsumer<String, Integer> printMultipleTimes = (s,n) -> {
+            for (int i = 0; i < n; i++) {
+                System.out.println(s);
+            }
+        };
 
+        printMultipleTimes.accept("Java",5);
 
 
 

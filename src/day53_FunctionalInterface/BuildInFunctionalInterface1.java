@@ -104,6 +104,8 @@ public class BuildInFunctionalInterface1 {
 
         // create a function that can reverse a List
 
+        // create a function that takes first and last names First letters uppercase the others lowercase ==> Java Programming
+
 
 
 
