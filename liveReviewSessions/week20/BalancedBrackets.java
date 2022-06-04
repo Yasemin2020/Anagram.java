@@ -16,33 +16,93 @@ public class BalancedBrackets {
     Ex: {([])} -> balanced
         {[(])} -> not balanced
         {[(])} -> not balanced
-
-
-        Checking for parenthesis is the most important task of compiler
-
-        Stack is : Last in First out
-        push(item) ---> putting on the
-        pop() ----> first retrieves and removes the last entry
-
+        {
+        [ (  ')' missing  ]
+        }()[] --> not balanced
+        Checking for parenthesis is the most important task of a compiler
+        Stack is : Last in First Out
+        push(item) ---> putting an the stack at the last element position
+        pop() -----> first retrives and then removes the last entry
         Map holds : key and value
-
+        { : key  -----> } :value
+        And I will use the value returned to check if the element coming from stack is opening or closing one
+        Algorithm:
+        Declare a Stack
+        we will get String from user: iterate through the chars of String
+        if the current char is an opening bracket, we will push it to Stack
+        if it is closing bracket: pop the last element from Stack and compare if it is the opening one for this element
+        How to match opening and closing : we will use Map key and values
+        {([])}
+        Stack | {  ,   ,                    |
+        pop() -- [ ]  : no problem
+        pop() -- ( ) : no problem
+        pop() --- { }
+        Map| '{'='}'
      */
     public static void main(String[] args) {
 
+        System.out.println(" {([])} is balanced " + isBalanced("{([])}"));
+
+        String str = "{[[(]]}";
+        boolean result = check(str);
+        System.out.println(list);
     }
 
     public static boolean isBalanced(String exp){
-        Stack<Character> stack = new Stack<>(); // hold characters coming from String
+        Stack<Character> stack = new Stack<>();  // hold characters coming from String
 
-        Map<Character, Character> brackets = new HashMap<>();
+        Map<Character,Character> brackets = new HashMap<>();
         brackets.put('{','}');
         brackets.put('[',']');
         brackets.put('(',')');
+        //   System.out.println("brackets = " + brackets);
+
         for (int i = 0; i < exp.length(); i++) {
-            char ch= exp.charAt(i);
+
+            //    {  (  [   ]   )   }
+            // stack|  |
+            char ch = exp.charAt(i);
+            if(ch=='('||ch=='['||ch=='{'){
+                stack.push(ch);
+            }else if(ch==')'||ch==']'||ch=='}'){
+                // nothing to compare
+                if(stack.isEmpty()){
+                    return false;
+                }else if(ch != brackets.get(stack.pop())){  // ] == ] , ) == ) , } == }
+                    // brackets.get(stack.pop())  : map(key : { )---> value as }: always returning closing brackets
+                    return false;
+                }
+
+            }
         }
 
+        if(stack.isEmpty()){
+            return true;
+        }else{
+            return false;
+        }
+
+
+    }
+    // Salih Abas
+    public static HashMap <Character, Character> list = new HashMap<>();
+
+    public static boolean check(String str){
+        list.put('[', ']');
+        list.put('{','}');
+        list.put('(',')');
+
+
+        for (int i = 0; i < str.length(); i++) {
+
+            if ((char)list.get(str.charAt(i))==str.charAt(str.length()-i-1)) {
+                continue;
+            }else {
+
+                return false;
+            }
+
+        }
         return true;
     }
-
 }
